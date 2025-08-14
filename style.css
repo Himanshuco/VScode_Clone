@@ -1,0 +1,273 @@
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0D1117;
+    color: white;
+}
+
+/* Link styling */
+a {
+    text-decoration: underline;
+    color: WHITE;
+    cursor: pointer;
+}
+
+/* Container to center and limit width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar styles */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #0D1117;
+    border-bottom: 0.1px solid white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 40px;
+    width: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #61dafb;
+}
+
+/* Main Section */
+.maintext {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.maintext h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.indent {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.download {
+    margin-top: 30px;
+    background-color: #ffffff0a;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.text p {
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+/* Card */ 
+.heroimg {
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cardx {
+    width: 370px;
+    height: 360px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff0a;
+    color: white;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardx img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    display: block;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        height: auto;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        padding-top: 10px;
+    }
+
+    .maintext h1 {
+        font-size: 2rem;
+    }
+
+    .download {
+        width: 100%;
+    }
+
+    .button {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+/*    */
+.agentmode{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+}
+.agntmodetext{
+    height: 290px;
+    width: 360.05px;
+    
+    color: #9fb1d1;
+    font-size: 16px;
+}
+.agimg{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 580px;
+    width: 800px;
+}
+
+
+/* Footer */
+.foot {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    background-color: #0D1117;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start; 
+}
+
+.footicon{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.footicon1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.xicon{
+    height: 18px;
+    width: 18.4px;
+}
+.ficon{
+    cursor: pointer;
+    display: flex;
+    justify-content: baseline;
+}
