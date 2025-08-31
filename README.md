@@ -1,2 +1,2 @@
 # VScode_Clone
-VS code clone using HTML , CSS
+VS code clone using HTML , CSS.
